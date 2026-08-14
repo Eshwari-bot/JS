@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #heading{
+            border:2px solid skyblue;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        #students-details{
+            border: 2px solid skyblue;
+            height: 500px;
+
+        }
+        input{
+            padding: 8px;
+            margin-left: 220px;
+            margin-top: 50px;
+            width: 300px;
+            
+        }
+        button{
+            height: 30px;
+            width: 160px;
+        }
+        table {
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+
+
+        }
+    </style>
+</head>
+<body>
+    <div id="heading">
+        <h1>Student management system</h1>
+    </div>
+    <br>
+
+        <div id="students-details">
+            <input type="text" id="id" placeholder="Student id">
+            <input type="text" id="name" placeholder="Student name"><br><br>
+            <input type="text" id="course" placeholder="Student course">
+            <input type="text" id="fees" placeholder="Student fees"><br> <br>
+           <center> <button id="addstddetails">Add student details</button></center>
+
+
+
+           <table border="2px">
+            
+                <th>Student_id</th>
+                <th>Student_name</th>
+                <th>Student_course</th>
+                <th>Student_fees</th>
+                <th>Edit/Delete</th>
+          
+
+<tbody id="displaystddetails"></tbody>
+
+           </table>
+        </div>
+
+
+
+
+
+
+
+
+
+    <script src="crud.js"></script>
+</body>
+</html>
